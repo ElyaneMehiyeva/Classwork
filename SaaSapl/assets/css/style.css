@@ -1,190 +1,363 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #5d68ff;
-}
-
-header .container a {
-  color: white;
-}
-
-.main {
-  background-image: url(https://preview.uideck.com/items/saaspal/assets/img/hero/hero-bg.svg);
+  padding: 100px 0px;
+  background-image: url(../img/hero-bg.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
 }
 
-.main h1 {
-  font-family: "Open Sans", sans-serif;
-  margin-left: 260px;
-  margin-top: 0px;
-  font-size: 60px;
-  width: 550px;
-  color: white;
-}
-
-.main p {
-  font-family: "Open Sans", sans-serif;
-  margin-left: 260px;
-  font-size: 18px;
-  width: 500px;
-  margin-top: 45px;
-  color: white;
-}
-
-.main button {
-  font-family: "Open Sans", sans-serif;
-  margin-left: 260px;
-  width: 170px;
-  height: 70px;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  border: 2px solid white;
-  background-color: #5d68ff;
-  margin-top: 40px;
-  color: white;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.main button:hover {
-  background-color: rgba(155, 157, 183, 0.5);
-}
-
-.main img {
-  margin-left: 950px;
-  margin-top: 3px;
-}
-
-.card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 50px 550px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 700px;
-}
-
-.card-container i {
-  height: 120px;
-  width: 120px;
-  background-color: rgba(93, 104, 255, 0.16);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 60px;
-  color: #5d68ff;
-  font-size: 50px;
-}
-
-.card-container h4 {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 20px;
-}
-
-.card-container p {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 20px;
-}
-
-.feature {
-  background-color: #eeefff;
+header .navbar {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 900px;
 }
 
-.feature .text {
-  font-family: "Open Sans", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
+header .container {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.feature .text h2 {
-  font-weight: 600;
-  margin-top: 40px;
+header .container .left {
+  width: 50%;
+  color: white;
 }
 
-.feature .text p {
-  margin-top: 30px;
-  color: grey;
-  width: 530px;
-}
-
-.feature .icon {
-  color: #5d68ff;
-  font-size: 60px;
-  margin-top: 20px;
-}
-
-.feature .text-row h2 {
-  margin-top: 30px;
+header .container .left h1 {
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
-.feature .text-row p {
+header .container .left p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+header .container .left button {
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+}
+
+header .container .left button:hover {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+header .container .right {
+  width: 50%;
+}
+
+header .container .right img {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+main .card-container {
+  padding: 100px 0px;
+}
+
+main .card-container .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .card-container .container .box {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .card-container .container .box i {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eeefff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #5864ff;
+  margin-bottom: 30px;
+}
+
+main .card-container .container .box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+main .card-container .container .box p {
+  text-align: center;
+  font-size: 16px;
+  color: grey;
+}
+
+main .perfect-container {
+  padding: 100px 0px;
+}
+
+main .perfect-container .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .perfect-container .container .left {
+  width: 50%;
+  position: relative;
+}
+
+main .perfect-container .container .left img:nth-child(1) {
+  width: 70%;
+}
+
+main .perfect-container .container .left img:nth-child(2) {
+  position: absolute;
+  bottom: 18%;
+  right: 0;
+  width: 85%;
+  z-index: 2;
+}
+
+main .perfect-container .container .left img:nth-child(3) {
+  position: absolute;
+  bottom: 7%;
+  right: 7.5%;
+  width: 50%;
+  z-index: 1;
+}
+
+main .perfect-container .container .right {
+  width: 50%;
+}
+
+main .perfect-container .container .right h2 {
+  font-size: 30px;
+}
+
+main .perfect-container .container .right p {
   color: grey;
   font-size: 18px;
+  margin-top: 30px;
 }
 
-.section-card {
-  width: 100%;
-  min-height: 100vh;
+main .perfect-container .container .right button {
+  width: 200px;
+  height: 70px;
+  border-radius: 35px;
+  border: 2px solid #5864ff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5864ff;
+  margin-top: 30px;
+  transition: all 1s;
 }
 
-.section-card #img1 {
-  position: absolute;
+main .perfect-container .container .right button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
 }
 
-.section-card #img2 {
-  position: absolute;
+main .easy-container {
+  padding: 100px 0px;
 }
 
-.section-card #img3 {
-  position: absolute;
+main .easy-container .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer {
-  overflow: hidden;
-  background-image: url(https://preview.uideck.com/items/saaspal/assets/img/footer/footer-bg.svg);
-  background-repeat: no-repeat;
+main .easy-container .container .left {
+  width: 50%;
+}
+
+main .easy-container .container .left h2 {
+  font-size: 30px;
+}
+
+main .easy-container .container .left p {
+  color: grey;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+main .easy-container .container .left ul {
+  list-style: none;
+}
+
+main .easy-container .container .left ul li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-indent: 15px;
   position: relative;
+}
+
+main .easy-container .container .left ul li::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: #5864ff;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px #5864ff;
+}
+
+main .easy-container .container .left button {
+  width: 180px;
+  height: 70px;
+  border-radius: 35px;
+  border: 2px solid #5864ff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5864ff;
+  margin-top: 30px;
+  transition: all 1s;
+}
+
+main .easy-container .container .left button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+main .easy-container .container .right {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .easy-container .container .right img:nth-child(1) {
+  width: 70%;
+}
+
+main .easy-container .container .right img:nth-child(2) {
+  position: absolute;
+  bottom: 18%;
+  left: 0;
+  width: 85%;
+  z-index: 2;
+}
+
+main .easy-container .container .right img:nth-child(3) {
+  position: absolute;
+  bottom: 7%;
+  left: 7.5%;
+  width: 50%;
+  z-index: 1;
+}
+
+main .choose-container {
+  padding: 100px 0px;
+  background-color: #eeefff;
   width: 100%;
+}
+
+main .choose-container .container > h1 {
+  text-align: center;
+}
+
+main .choose-container .container > p {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .choose-container .container .box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+main .choose-container .container .box-container .box {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+main .choose-container .container .box-container .box i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #5864ff;
+}
+
+main .choose-container .container .box-container .box h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .choose-container .container .box-container .box p {
+  color: grey;
+  width: 90%;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  main .card-container .container {
+    flex-direction: column;
+  }
+  main .card-container .container .box {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  main .choose-container .container .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .choose-container .container .box-container .box {
+    width: 80%;
+  }
+  main .perfect-container .container {
+    flex-direction: column;
+  }
+  main .perfect-container .container .left {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  main .perfect-container .container .right {
+    width: 100%;
+  }
+  main .easy-container .container {
+    flex-direction: column;
+  }
+  main .easy-container .container .left {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  main .easy-container .container .right {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
