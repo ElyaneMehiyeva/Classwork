@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(11, 17, 58);
+}
+main .startup-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .startup-container .container .text {
+  text-align: center;
+  color: white;
+}
+main .startup-container .container .text h1 {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+}
+main .startup-container .container .text h5 {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.741);
+}
+main .startup-container .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+main .startup-container .container .button .get {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(74, 108, 247);
+  color: white;
+  font-weight: 700;
+  margin-right: 20px;
+  border: none;
+}
+main .startup-container .container .button .learn {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(34, 39, 73);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+main .main-container {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(11, 17, 58);
+}
+main .main-container .container {
+  width: 100%;
+  padding: 100px;
+}
+main .main-container .container .text h1 {
+  color: white;
+  text-align: center;
+}
+main .main-container .container .text p {
+  color: grey;
+  text-align: center;
+  width: 48%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+main .main-container .container .icon-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0px;
+}
+main .main-container .container .icon-container .item {
+  width: 30%;
+  margin-top: 30px;
+}
+main .main-container .container .icon-container .item div {
+  background-color: rgb(18, 26, 77);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+main .main-container .container .icon-container .item div i {
+  color: rgb(74, 108, 247);
+  font-size: 30px;
+}
+main .main-container .container .icon-container .item h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+main .main-container .container .icon-container .item p {
+  color: grey;
+  font-size: 16px;
+}
+main .ready-container {
+  width: 100%;
+  padding: 100px;
+}
+main .ready-container .text h1 {
+  color: white;
+  text-align: center;
+}
+main .ready-container .text p {
+  color: grey;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+}
+main .ready-container .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+main .ready-container .link img {
+  border-radius: 10px;
+}
+main .icon-container {
+  width: 100%;
+  min-height: 50vh;
+}
+main .icon-container .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .icon-container .container div {
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+  background-color: rgb(18, 26, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .icon-container .container div img {
+  width: 150px;
+  height: 150px;
+  margin-right: 80px;
+}
+main .crafted-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+main .crafted-container .container .item {
+  width: 50%;
+}
+main .crafted-container .container .item .text h1 {
+  color: white;
+  font-size: 50px;
+}
+main .crafted-container .container .item .text p {
+  color: grey;
+  font-size: 20px;
+  margin-top: 20px;
+}
+main .crafted-container .container .item .check {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .crafted-container .container .item .check div {
+  width: 50%;
+  display: flex;
+}
+main .crafted-container .container .item .check div .icon {
+  background-color: rgb(18, 26, 77);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+main .crafted-container .container .item .check div .icon i {
+  color: rgb(74, 108, 247);
+  font-size: 15px;
+}
+main .crafted-container .container .item .check div p {
+  color: grey;
+  font-size: 18px;
+  margin-left: 20px;
+}
+main .bug-container .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  border-top: 1px solid grey;
+}
+main .bug-container .container .img {
+  width: 50%;
+}
+main .bug-container .container .text {
+  width: 50%;
+}
+main .bug-container .container .text h3 {
+  color: white;
+}
+main .bug-container .container .text p {
+  margin-top: 20px;
+  color: grey;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(20, 28, 81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */
